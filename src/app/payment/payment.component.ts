@@ -15,7 +15,7 @@ export class PaymentComponent implements OnInit {
   error?: any;
   username?:any;
   amount?:any;
-  constructor(private orderService: OrderServiceService,private route:ActivatedRoute,private router:Router ) {
+  constructor(private orderService: OrderServiceService,private route:ActivatedRoute) {
  
   }
 

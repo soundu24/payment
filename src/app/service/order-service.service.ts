@@ -7,7 +7,7 @@ const httpOptions = {
   };
   declare var Razorpay: any;
 
- const API_URL="http://localhost:8081/api/"
+ //const API_URL="http://localhost:8081/api/"
 
 @Injectable({
   providedIn: 'root'
@@ -26,7 +26,7 @@ export class OrderServiceService {
 }
 
 updateOrder(order:any): Observable<any> {
-    return this.http.put("http://localhost:8082/api/order", {
+    return this.http.put("http://localhost:8081/api/order", {
     razorpayOrderId: order.razorpay_order_id,
     razorpayPaymentId: order.razorpay_payment_id,
     razorpaySignature: order.razorpay_signature
